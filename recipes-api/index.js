@@ -89,7 +89,7 @@ app.get("/get-one-recipe/:index", async (req, res) => {
   //here I called my helper function and passed in the index
   const recipe = await getOneRecipe(index);
   //send the JSON data
-  res.json({ recipe });
+  res.json(recipe);
 });
 
 // 3. GET /get-all-recipe-names
